@@ -1,0 +1,32 @@
+{
+  "name": "blueprint-workflow",
+  "version": "0.3.0",
+  "description": "Learn and build reusable workflows while you work with your AI agent.",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Blueprint Workflow",
+    "shortDescription": "Build reusable workflows",
+    "longDescription": "Blueprint Workflow turns real work with your AI agent into reusable, evidence-linked methods. Start a task in its original chat, then keep working while semantic checkpoints preserve instructions, actions, outcomes, corrections and decisions. Independent background analysis maintains durable task memory and updates affected workflow sections as work progresses, so recording and drafting continue together across long tasks and restarts. Review evidence-based suggestions, accept, reject or defer changes, and keep adoption separate from tested results. Research runs as a separate task when supported; engines without verified research capability hand the work back to the original chat. Explicitly registered files retain versions and hashes. Finalize a fixed workflow with traceable sources, export it, and track each reuse separately. Records remain in your local private data directory; inference uses your chosen supported AI engine and its existing authentication. Host hooks, wake-up behavior and research availability depend on the integration and verified environment.",
+    "developerName": "Blueprint Studio",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "使用藍圖工作流記錄今次任務，一邊工作一邊整理可重用流程。",
+    "logo": "./assets/mark.svg",
+    "composerIcon": "./assets/mark.svg",
+    "brandColor": "#c9a45c",
+    "brandColorDark": "#c9a45c",
+    "websiteURL": "https://blueprint-agent-studio.onrender.com/"
+  },
+  "author": {
+    "name": "Blueprint Studio",
+    "url": "https://blueprint-agent-studio.onrender.com/"
+  },
+  "homepage": "https://blueprint-agent-studio.onrender.com/",
+  "repository": "https://github.com/collieai-g/Blueprint-Workflow",
+  "license": "Apache-2.0"
+}

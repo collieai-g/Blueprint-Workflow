@@ -1,8 +1,8 @@
 # 安裝與啟用指南
 
-[繁體中文](installation.zh-Hant.md) · [English](installation.en.md) · [返回產品介紹](../README.md)
+[繁體中文](installation.zh-Hant.md) · [English](installation.en.md) · [返回產品介紹](../README.md) · [版本更新](UPDATES.md)
 
-> **適用版本：0.3.0。** 本頁說明取得藍圖工作室另外提供的受控安裝包後，如何安裝及核對結果。本公開倉庫只提供產品資訊與文件，不包含原始碼、安裝包、下載入口或訂閱付款功能。
+> **適用版本：0.3.0。** 藍圖工作流採用 [Apache 2.0](../LICENSE) 開源授權。原始碼、安裝器及合成測試位於 [`plugins/blueprint-workflow`](../plugins/blueprint-workflow)，可直接從本倉庫安裝，毋須訂閱藍圖工作室服務。模型服務本身的存取及用量條件仍由供應商決定。
 
 ## 1. 安裝前準備
 
@@ -11,23 +11,23 @@
 - **Python 3.12 或以上版本**，並確認可在終端機執行。
 - 已安裝並可使用的目標 AI Agent：Codex、Claude Code、Cursor 或 Gemini CLI。
 - 已安裝及登入的背景分析引擎：Codex CLI、Claude Code 或 Gemini CLI。
-- 由藍圖工作室另外提供的安裝包，以及可寫入本機私人資料目錄的權限。
+- Git，以及可寫入本機私人資料目錄的權限。
 
 前台 Agent 負責與你合作完成工作；背景引擎負責持續整理工作流，兩者可以分開選擇。Cursor 必須另外明確選擇受支援的背景引擎。
 
 外掛沿用所選 CLI 的現有登入，不會代你登入或複製帳戶憑證。模型服務的使用權限與用量限制，仍以所選供應商為準。
 
-## 2. 解壓安裝包
+## 2. 取得原始碼
 
-將取得的安裝包解壓至本機資料夾，在**包含 `scripts` 資料夾的套件根目錄**開啟 PowerShell。
-
-以下命令須於該安裝包內執行。由於本公開倉庫沒有安裝程式，直接下載或複製本介紹倉庫並不能完成安裝。
-
-先確認 Python 版本：
+在終端機複製公開倉庫，再進入**包含 `scripts` 資料夾的外掛目錄**：
 
 ```powershell
+git clone https://github.com/collieai-g/Blueprint-Workflow.git
+cd Blueprint-Workflow/plugins/blueprint-workflow
 python --version
 ```
+
+以下安裝命令均在 `plugins/blueprint-workflow` 內執行。GitHub 的原始碼 ZIP 亦可使用；解壓後須進入相同的外掛子目錄。
 
 ## 3. 選擇一個目標 Agent
 
@@ -109,11 +109,13 @@ python scripts/launch.py doctor --host codex
 
 ## 6. 本機資料、更新與移除
 
-Windows 預設私人資料根目錄為 `%LOCALAPPDATA%\BlueprintWorkflowPlugin`。記錄、草稿、工作流版本與匯出資料，與公開介紹倉庫分開保存。程式在本機運行，AI 推理仍使用你選擇的模型服務；請依實際工作授權提供資料。
+Windows 預設私人資料根目錄為 `%LOCALAPPDATA%\BlueprintWorkflowPlugin`。記錄、草稿、工作流版本與匯出資料，與公開原始碼分開保存。程式在本機運行，AI 推理仍使用你選擇的模型服務；本機保存不等於離線推理，請依實際工作授權提供資料。
 
-更新時，從新安裝包根目錄執行相同安裝命令。安裝器會先要求既有背景程序平順停止，並在需要遷移既有資料時建立備份；不要以刪除私人資料目錄的方式更新。
+帳戶內已安裝的外掛、Git marketplace 安裝及本機安裝，使用不同更新流程。請先按[版本更新指南](UPDATES.md)識別來源；不能只靠 GitHub 版本號推定已安裝副本更新。
 
-如需移除某一宿主的接駁，可於安裝包中執行：
+對從本機原始碼安裝的接駁，先取得所選版本的原始碼，再在外掛目錄執行相同安裝命令。安裝器會先要求既有背景程序平順停止，並在需要遷移既有資料時建立備份；不要以刪除私人資料目錄的方式更新。宿主載入新版後，仍須核對版本、工具及記錄能力。
+
+如需移除某一宿主的本機接駁，可於外掛原始碼目錄執行：
 
 ```powershell
 python scripts/launch.py uninstall --host codex

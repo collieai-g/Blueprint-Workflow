@@ -1,0 +1,10 @@
+Blueprint Workflow
+Copyright 2026 Blueprint Studio and contributors.
+
+Source code and documentation are licensed under the Apache License, Version 2.0.
+Blueprint Studio and Blueprint Workflow names and logos identify the original
+publisher. The software license grants no trademark rights; see section 6 of
+LICENSE. Redistribution may retain attribution to the original project.
+
+The MCP Python SDK is a separately installed dependency licensed under MIT.
+It is not vendored in this source distribution. Its own license continues to apply.

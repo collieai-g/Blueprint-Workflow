@@ -4,7 +4,7 @@
 
 **Product version: 0.3.0 · Validation date: 2026-11-10 · Primary environment: Windows, Python 3.12 and Codex CLI**
 
-This page summarizes acceptance results for the development version. The application implementation, test suite and detailed acceptance records remain in the private maintenance environment.
+This page summarizes acceptance results for the development version. The implementation and synthetic test suite are public in [`plugins/blueprint-workflow`](../plugins/blueprint-workflow). Private runtime data and detailed local acceptance receipts are not published.
 
 ## Completed checks
 

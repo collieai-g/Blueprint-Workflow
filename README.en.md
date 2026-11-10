@@ -18,13 +18,15 @@
 <p align="center">
   <img src="https://img.shields.io/badge/PRODUCT-0.3.0-c9a45c?style=flat-square&amp;labelColor=0d0e10" alt="Product version 0.3.0">
   <img src="https://img.shields.io/badge/RECORDS-LOCAL-a3a5ab?style=flat-square&amp;labelColor=0d0e10" alt="Task records stored locally">
-  <img src="https://img.shields.io/badge/SERVICE-IN_PLANNING-e3d8be?style=flat-square&amp;labelColor=0d0e10" alt="Monthly service in planning">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-Apache_2.0-e3d8be?style=flat-square&amp;labelColor=0d0e10" alt="Apache 2.0 open-source license"></a>
 </p>
 
 <p align="center">
   <a href="#product-value">Product value</a> ·
   <a href="docs/installation.en.md">Installation</a> ·
   <a href="docs/validation.en.md">Validation</a> ·
+  <a href="plugins/blueprint-workflow">Source</a> ·
+  <a href="docs/UPDATES.md">Updates</a> ·
   <a href="docs/service.en.md">Service plans</a> ·
   <a href="https://blueprint-agent-studio.onrender.com/">Official website ↗</a>
 </p>
@@ -33,7 +35,7 @@
 
 ## Product value
 
-**Blueprint Workflow** is a workflow-learning plugin for existing AI agents. As you work, it develops a reusable method from your goals, instructions, observed results and corrections—preserving the experience that makes a process useful beyond a single task.
+**Blueprint Workflow** is an Apache 2.0 open-source workflow-learning plugin for existing AI agents. As you work, it develops a reusable method from your goals, instructions, observed results and corrections—preserving the experience that makes a process useful beyond a single task.
 
 For professionals and teams, the asset includes both the final output and the method behind it. Blueprint Workflow connects how the work was completed with the decisions that shaped it, reducing the effort of reconstructing the process later.
 
@@ -71,11 +73,13 @@ Local adapters are provided for **Codex, Claude Code, Cursor and Gemini CLI**. T
 
 Cursor requires an explicitly selected supported background engine. Native authentication, hooks and research capabilities are distinguished by environment and actual validation. See [Installation](docs/installation.en.md) and [Validation](docs/validation.en.md).
 
-### Start after receiving an installation package
+### Start from source
 
-Open PowerShell in the root of the separately provided package. For Codex:
+Clone the repository and open PowerShell in the plugin directory. For Codex:
 
 ```powershell
+git clone https://github.com/collieai-g/Blueprint-Workflow.git
+cd Blueprint-Workflow/plugins/blueprint-workflow
 python --version   # Python 3.12 or later is required
 & .\scripts\install-local.ps1 -Host codex
 ```
@@ -84,21 +88,32 @@ After installation and activation, tell your agent:
 
 > Use Blueprint Workflow to record this task and develop a reusable workflow as we work. The goal is … The completion criteria are …
 
-**This is a public product-information repository. Application source and installation packages are not included.** The commands above apply to the separately supplied package. Read the [installation guide](docs/installation.en.md) for full prerequisites and other host commands.
+Source, installers and synthetic tests are in [`plugins/blueprint-workflow`](plugins/blueprint-workflow). Read the [installation guide](docs/installation.en.md) for prerequisites and other hosts. Existing account plugins, local installations and Git marketplaces have different update paths: see [Updates](docs/UPDATES.md). A new GitHub commit does not establish that an installed copy has updated.
 
 ## For people who build working methods
 
 Designed for professionals, operations teams, consultants and AI workflow designers who need to develop processes with AI, preserve specialist decisions and deliver reusable ways of working.
 
-## Monthly service in planning
+## Open source and optional services
 
-Blueprint Studio is planning a monthly service offering for Blueprint Workflow. The formal offering will define access and installation arrangements, updates, support scope and pricing.
+The core software is available to use, modify and share under [Apache 2.0](LICENSE). Using the open-source version does not require a Blueprint Studio subscription. See [NOTICE](NOTICE) for branding and related notices.
 
-This repository currently provides product information and usage guidance. Service plans and availability will be announced separately. [Explore the service direction →](docs/service.en.md)
+Blueprint Studio is separately exploring optional installation assistance, compatibility maintenance and usage support. Plans, prices and service commitments will be announced separately. [Explore the service direction →](docs/service.en.md)
+
+## Build it together
+
+Report issues and suggest improvements through [Issues](https://github.com/collieai-g/Blueprint-Workflow/issues), or use the [contribution guide](CONTRIBUTING.md) to propose a change. Read the [security policy](SECURITY.md) before reporting a vulnerability, and keep private task records and credentials out of public reports.
+
+From the plugin source directory:
+
+```powershell
+python -m pip install -e .
+python -m unittest discover -s tests -q
+```
 
 ## Development validation
 
-| 198 tests | 10,000 records | 30 tools |
+| 198+ tests | 10,000 records | 30 tools |
 | :---: | :---: | :---: |
 | Passed for product version 0.3.0 | Synthetic records across fourteen simulated work periods | Verified MCP tool interfaces |
 
@@ -109,5 +124,5 @@ Real background-model analysis, read-only research, new-input execution through 
 <p align="center">
   <strong>Blueprint Workflow · 藍圖工作流</strong><br>
   Developed by <a href="https://blueprint-agent-studio.onrender.com/">Blueprint Studio · 藍圖工作室</a><br>
-  <a href="README.md">繁體中文</a> · <a href="docs/installation.en.md">Installation</a> · <a href="docs/service.en.md">Service information</a>
+  <a href="README.md">繁體中文</a> · <a href="docs/installation.en.md">Installation</a> · <a href="CONTRIBUTING.md">Contribute</a> · <a href="LICENSE">Apache 2.0</a>
 </p>

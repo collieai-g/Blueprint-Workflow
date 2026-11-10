@@ -1,8 +1,8 @@
 # Installation & Activation
 
-[繁體中文](installation.zh-Hant.md) · [English](installation.en.md) · [Product overview](../README.en.md)
+[繁體中文](installation.zh-Hant.md) · [English](installation.en.md) · [Product overview](../README.en.md) · [Updates](UPDATES.md)
 
-> **Applies to version 0.3.0.** This guide explains setup after receiving a controlled installation package separately from Blueprint Studio. This public repository contains product information and documentation. It does not contain source code, installation packages, download access or subscription payments.
+> **Applies to version 0.3.0.** Blueprint Workflow is open source under [Apache 2.0](../LICENSE). Source, installers and synthetic tests are in [`plugins/blueprint-workflow`](../plugins/blueprint-workflow). You can install from this repository without a Blueprint Studio subscription. Access and usage terms for the selected model service still depend on that provider.
 
 ## 1. Before you begin
 
@@ -11,23 +11,23 @@ Prepare the following:
 - **Python 3.12 or later**, available from your terminal.
 - An installed, usable target AI agent: Codex, Claude Code, Cursor or Gemini CLI.
 - An installed and authenticated background analysis engine: Codex CLI, Claude Code or Gemini CLI.
-- An installation package provided separately by Blueprint Studio, and permission to write to a local private data directory.
+- Git, and permission to write to a local private data directory.
 
 The foreground agent works with you on the actual task. The background engine continuously develops the workflow. They can be selected separately. Cursor requires an explicitly selected supported background engine.
 
 The plugin uses the selected CLI's existing login. It does not sign you in or copy account credentials. Access to the model service and its usage limits remain subject to the selected provider.
 
-## 2. Extract the installation package
+## 2. Get the source
 
-Extract the package to a local folder. Open PowerShell in the **package root containing the `scripts` folder**.
-
-Run the commands below inside that package. This public repository does not contain the installer; downloading or cloning this product showcase alone will not install the plugin.
-
-Check your Python version first:
+Clone the public repository and enter the **plugin directory containing the `scripts` folder**:
 
 ```powershell
+git clone https://github.com/collieai-g/Blueprint-Workflow.git
+cd Blueprint-Workflow/plugins/blueprint-workflow
 python --version
 ```
+
+Run all installation commands below from `plugins/blueprint-workflow`. You can also use GitHub's source ZIP; enter the same plugin subdirectory after extraction.
 
 ## 3. Select one target agent
 
@@ -109,11 +109,13 @@ Finalization makes the method ready to test. A new-input execution must still be
 
 ## 6. Local data, updates and removal
 
-The default Windows private data root is `%LOCALAPPDATA%\BlueprintWorkflowPlugin`. Recordings, drafts, workflow versions and exports are stored separately from this public product repository. The program runs locally; AI inference still uses your selected model service. Provide data according to the actual task's authorization.
+The default Windows private data root is `%LOCALAPPDATA%\BlueprintWorkflowPlugin`. Recordings, drafts, workflow versions and exports are stored separately from the public source. The program runs locally; AI inference still uses your selected model service. Local storage does not mean offline inference. Provide data according to the actual task's authorization.
 
-For an update, run the same installation command from the new package root. The installer requests a graceful stop of the existing background process and creates a backup when existing data needs migration. Do not update by deleting the private data directory.
+Account-installed plugins, Git marketplace installations and local installations have different update paths. Identify your source using [Updates](UPDATES.md); a GitHub version number alone does not establish that the installed copy has updated.
 
-To remove one host adapter, run this command from the installation package:
+For an adapter installed from local source, obtain the chosen source version and run the same installation command from its plugin directory. The installer requests a graceful stop of the existing background process and creates a backup when existing data needs migration. Do not update by deleting the private data directory. After the host loads the new version, check the version, tools and recording behavior.
+
+To remove one locally installed host adapter, run this command from the plugin source directory:
 
 ```powershell
 python scripts/launch.py uninstall --host codex

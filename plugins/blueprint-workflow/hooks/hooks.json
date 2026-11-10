@@ -1,0 +1,10 @@
+{
+  "description": "Task-scoped semantic workflow recording. No screenshots or transcript scraping.",
+  "hooks": {
+    "SessionStart": [{"hooks": [{"type": "command", "command": "python \"${PLUGIN_ROOT}/scripts/launch.py\" hook", "timeout": 10}]}],
+    "UserPromptSubmit": [{"hooks": [{"type": "command", "command": "python \"${PLUGIN_ROOT}/scripts/launch.py\" hook", "timeout": 10}]}],
+    "PreToolUse": [{"matcher": ".*", "hooks": [{"type": "command", "command": "python \"${PLUGIN_ROOT}/scripts/launch.py\" hook", "timeout": 10}]}],
+    "PostToolUse": [{"matcher": ".*", "hooks": [{"type": "command", "command": "python \"${PLUGIN_ROOT}/scripts/launch.py\" hook", "timeout": 10}]}],
+    "PreCompact": [{"hooks": [{"type": "command", "command": "python \"${PLUGIN_ROOT}/scripts/launch.py\" hook", "timeout": 10}]}]
+  }
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blueprint-workflow-plugin"
+version = "0.3.0"
+description = "A headless plugin that learns reusable AI workflows incrementally."
+license = {file = "LICENSE"}
+authors = [{name = "Blueprint Studio"}]
+requires-python = ">=3.12"
+dependencies = ["mcp==2.3.0"]
+
+[project.urls]
+Homepage = "https://blueprint-agent-studio.onrender.com/"
+Repository = "https://github.com/collieai-g/Blueprint-Workflow"
+Issues = "https://github.com/collieai-g/Blueprint-Workflow/issues"
+
+[project.scripts]
+blueprint-workflow = "blueprint_workflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["blueprint_workflow*"]

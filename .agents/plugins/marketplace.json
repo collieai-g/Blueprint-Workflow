@@ -1,0 +1,12 @@
+{
+  "name": "blueprint-studio",
+  "interface": {"displayName": "Blueprint Studio"},
+  "plugins": [
+    {
+      "name": "blueprint-workflow",
+      "source": {"source": "local", "path": "./plugins/blueprint-workflow"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+      "category": "Productivity"
+    }
+  ]
+}

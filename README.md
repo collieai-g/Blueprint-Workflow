@@ -18,13 +18,15 @@
 <p align="center">
   <img src="https://img.shields.io/badge/PRODUCT-0.3.0-c9a45c?style=flat-square&amp;labelColor=0d0e10" alt="產品版本 0.3.0">
   <img src="https://img.shields.io/badge/RECORDS-LOCAL-a3a5ab?style=flat-square&amp;labelColor=0d0e10" alt="工作記錄保存於本機">
-  <img src="https://img.shields.io/badge/SERVICE-IN_PLANNING-e3d8be?style=flat-square&amp;labelColor=0d0e10" alt="月費服務規劃中">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-Apache_2.0-e3d8be?style=flat-square&amp;labelColor=0d0e10" alt="Apache 2.0 開源授權"></a>
 </p>
 
 <p align="center">
   <a href="#產品價值">產品價值</a> ·
   <a href="docs/installation.zh-Hant.md">安裝指引</a> ·
   <a href="docs/validation.zh-Hant.md">驗證狀態</a> ·
+  <a href="plugins/blueprint-workflow">原始碼</a> ·
+  <a href="docs/UPDATES.md">版本更新</a> ·
   <a href="docs/service.zh-Hant.md">服務方向</a> ·
   <a href="https://blueprint-agent-studio.onrender.com/">藍圖工作室官網 ↗</a>
 </p>
@@ -33,7 +35,7 @@
 
 ## 產品價值
 
-**藍圖工作流（Blueprint Workflow）** 是融入既有 AI Agent 的工作流學習外掛。在工作進行期間，它持續整理目標、指示、操作結果與修正，將一次任務中形成的經驗，逐步建立成可以接續、交接與重用的方法。
+**藍圖工作流（Blueprint Workflow）** 是採用 Apache 2.0 授權、融入既有 AI Agent 的開源工作流學習外掛。在工作進行期間，它持續整理目標、指示、操作結果與修正，將一次任務中形成的經驗，逐步建立成可以接續、交接與重用的方法。
 
 對專業人士與團隊而言，有價值的不只是最後成品，還包括「如何完成」以及「為何這樣做」。藍圖工作流把這些脈絡連結起來，減少日後重建方法的負擔。
 
@@ -71,11 +73,13 @@
 
 Cursor 需明確選擇受支援的背景引擎。各宿主的原生登入、Hooks 與研究能力按環境及實測範圍區分，詳見[安裝指引](docs/installation.zh-Hant.md)及[驗證狀態](docs/validation.zh-Hant.md)。
 
-### 取得安裝套件後開始
+### 從原始碼開始
 
-在另外獲提供的安裝套件根目錄開啟 PowerShell，以 Codex 為例：
+複製倉庫，在外掛目錄開啟 PowerShell。以 Codex 為例：
 
 ```powershell
+git clone https://github.com/collieai-g/Blueprint-Workflow.git
+cd Blueprint-Workflow/plugins/blueprint-workflow
 python --version   # 需要 Python 3.12 或以上
 & .\scripts\install-local.ps1 -Host codex
 ```
@@ -84,21 +88,32 @@ python --version   # 需要 Python 3.12 或以上
 
 > 使用藍圖工作流記錄今次任務，一邊工作一邊整理可重用流程。目標是……完成標準是……
 
-**本倉庫是公開產品介紹頁，沒有程式碼或安裝套件。** 上述指令適用於另外提供的安裝套件；完整環境要求及其他宿主命令，請閱讀[中英文安裝文件](docs/installation.zh-Hant.md)。
+原始碼、安裝器及合成測試位於 [`plugins/blueprint-workflow`](plugins/blueprint-workflow)。完整環境要求及其他宿主命令，請閱讀[安裝文件](docs/installation.zh-Hant.md)。既有帳戶外掛、本機安裝及 Git marketplace 的更新路線，請見[版本更新指南](docs/UPDATES.md)；GitHub 有新提交，並不代表已安裝副本已完成更新。
 
 ## 為建立工作方法的人而設
 
 適合需要與 AI 共同設計工作、保留專業判斷，以及交付可重用流程的專業人士、營運團隊、顧問與 AI 工作流設計者。
 
-## 月費服務規劃中
+## 開源共用與可選服務
 
-藍圖工作室正規劃以月費形式提供藍圖工作流服務。正式方案將說明取得與安裝安排、更新方式、支援範圍及收費。
+核心軟件依 [Apache 2.0](LICENSE) 開放使用、修改及分享；使用開源版本毋須訂閱藍圖工作室服務。品牌及相關聲明見 [NOTICE](NOTICE)。
 
-目前本倉庫提供產品資訊與使用指南；服務方案及正式供應安排將另行公布。[了解服務方向 →](docs/service.zh-Hant.md)
+藍圖工作室另在規劃可選的安裝協助、相容性維護及使用支援服務。方案、價格與承諾範圍將另行公布。[了解服務方向 →](docs/service.zh-Hant.md)
+
+## 一起開發
+
+歡迎透過 [Issues](https://github.com/collieai-g/Blueprint-Workflow/issues) 提出問題及改善建議，或按[貢獻指南](CONTRIBUTING.md)提交修改。安全問題請先閱讀[安全政策](SECURITY.md)，不要公開私人工作記錄或憑證。
+
+在外掛原始碼目錄執行：
+
+```powershell
+python -m pip install -e .
+python -m unittest discover -s tests -q
+```
 
 ## 開發驗證
 
-| 198 項 | 10,000 筆 | 30 個 |
+| 198+ 項 | 10,000 筆 | 30 個 |
 | :---: | :---: | :---: |
 | 0.3.0 程式測試通過 | 合成記錄與十四個模擬工作日 | 已核對的 MCP 工具介面 |
 
@@ -109,5 +124,5 @@ python --version   # 需要 Python 3.12 或以上
 <p align="center">
   <strong>Blueprint Workflow · 藍圖工作流</strong><br>
   由 <a href="https://blueprint-agent-studio.onrender.com/">Blueprint Studio · 藍圖工作室</a> 開發<br>
-  <a href="README.en.md">English</a> · <a href="docs/installation.zh-Hant.md">安裝文件</a> · <a href="docs/service.zh-Hant.md">服務資訊</a>
+  <a href="README.en.md">English</a> · <a href="docs/installation.zh-Hant.md">安裝文件</a> · <a href="CONTRIBUTING.md">參與開發</a> · <a href="LICENSE">Apache 2.0</a>
 </p>

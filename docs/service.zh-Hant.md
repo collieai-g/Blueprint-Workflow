@@ -1,6 +1,6 @@
 # 服務方向
 
-[繁體中文](service.zh-Hant.md) · [English](service.en.md) · [返回產品首頁](../README.md)
+[繁體中文](service.zh-Hant.md) · [English](service.en.md) · [返回產品首頁](../README.md) · [藍圖工作室官網 ↗](https://blueprint-agent-studio.onrender.com/)
 
 ## 把工作方法，建立成可持續使用的資產
 
@@ -28,4 +28,4 @@
 
 ---
 
-Blueprint Workflow · 藍圖工作流，由 Blueprint Studio · 藍圖工作室開發。
+Blueprint Workflow · 藍圖工作流，由 [Blueprint Studio · 藍圖工作室](https://blueprint-agent-studio.onrender.com/) 開發。

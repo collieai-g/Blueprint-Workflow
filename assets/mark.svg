@@ -1,15 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
-  <title id="title">Blueprint Workflow</title>
-  <desc id="desc">A connected, architectural letter B, representing a method built from real work.</desc>
-  <defs>
-    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102f43"/><stop offset="1" stop-color="#071b2c"/></linearGradient>
-    <linearGradient id="ink" x2="1" y2="1"><stop stop-color="#eaf5f6"/><stop offset="1" stop-color="#6fe3d2"/></linearGradient>
-  </defs>
-  <rect width="96" height="96" rx="22" fill="url(#bg)"/>
-  <rect x=".75" y=".75" width="94.5" height="94.5" rx="21.25" fill="none" stroke="#a6d5df" stroke-opacity=".23" stroke-width="1.5"/>
-  <path d="M14 27h68M14 48h68M14 69h68M27 14v68M48 14v68M69 14v68" fill="none" stroke="#c6e8ee" stroke-opacity=".055"/>
-  <path d="M29 25v46h21c11 0 18-5 18-13s-7-13-18-13H29m0-20h19c10 0 16 4 16 10S58 45 48 45" fill="none" stroke="url(#ink)" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="29" cy="25" r="4" fill="#73e8d5"/>
-  <circle cx="29" cy="71" r="3" fill="#d8b97a"/>
-  <path d="M73 18h5v5M18 73v5h5" fill="none" stroke="#d8b97a" stroke-opacity=".7" stroke-width="1.25"/>
+  <title id="title">Blueprint Studio</title>
+  <desc id="desc">The original Blueprint Studio open-square mark with a gold dot, as used on the official website.</desc>
+  <rect width="96" height="96" rx="20" fill="#0d0e10"/>
+  <rect x=".75" y=".75" width="94.5" height="94.5" rx="19.25" fill="none" stroke="#c9a45c" stroke-opacity=".25" stroke-width="1.5"/>
+  <g transform="translate(5 5) scale(1.35)">
+    <path d="M50 38V14H14V50H38" fill="none" stroke="#f5f2ec" stroke-width="4"/>
+    <circle cx="50" cy="50" r="4.2" fill="#c9a45c"/>
+  </g>
 </svg>

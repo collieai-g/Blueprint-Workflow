@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <a href="https://blueprint-agent-studio.onrender.com/"><img src="assets/blueprint-studio.svg" alt="Blueprint Studio · 藍圖工作室官網" width="196"></a>
+</p>
+
+<p align="center">
   <img src="assets/hero.zh-Hant.svg" alt="藍圖工作流 — 把真實工作，累積成可重用的方法。" width="100%">
 </p>
 
@@ -12,16 +16,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PRODUCT-0.3.0-65dfc5?style=flat-square&amp;labelColor=102b3d" alt="產品版本 0.3.0">
-  <img src="https://img.shields.io/badge/RECORDS-LOCAL-9bbacf?style=flat-square&amp;labelColor=102b3d" alt="工作記錄保存於本機">
-  <img src="https://img.shields.io/badge/SERVICE-IN_PLANNING-d8b97a?style=flat-square&amp;labelColor=102b3d" alt="月費服務規劃中">
+  <img src="https://img.shields.io/badge/PRODUCT-0.3.0-c9a45c?style=flat-square&amp;labelColor=0d0e10" alt="產品版本 0.3.0">
+  <img src="https://img.shields.io/badge/RECORDS-LOCAL-a3a5ab?style=flat-square&amp;labelColor=0d0e10" alt="工作記錄保存於本機">
+  <img src="https://img.shields.io/badge/SERVICE-IN_PLANNING-e3d8be?style=flat-square&amp;labelColor=0d0e10" alt="月費服務規劃中">
 </p>
 
 <p align="center">
   <a href="#產品價值">產品價值</a> ·
   <a href="docs/installation.zh-Hant.md">安裝指引</a> ·
   <a href="docs/validation.zh-Hant.md">驗證狀態</a> ·
-  <a href="docs/service.zh-Hant.md">服務方向</a>
+  <a href="docs/service.zh-Hant.md">服務方向</a> ·
+  <a href="https://blueprint-agent-studio.onrender.com/">藍圖工作室官網 ↗</a>
 </p>
 
 ---
@@ -103,6 +108,6 @@ python --version   # 需要 Python 3.12 或以上
 
 <p align="center">
   <strong>Blueprint Workflow · 藍圖工作流</strong><br>
-  由 Blueprint Studio · 藍圖工作室開發<br>
+  由 <a href="https://blueprint-agent-studio.onrender.com/">Blueprint Studio · 藍圖工作室</a> 開發<br>
   <a href="README.en.md">English</a> · <a href="docs/installation.zh-Hant.md">安裝文件</a> · <a href="docs/service.zh-Hant.md">服務資訊</a>
 </p>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="80" viewBox="0 0 280 80" role="img" aria-labelledby="title desc">
+  <title id="title">Blueprint Studio · 藍圖工作室</title>
+  <desc id="desc">Blueprint Studio's original open-square and gold-dot emblem, accompanied by a Blueprint Studio wordmark in system typography.</desc>
+  <rect width="280" height="80" rx="14" fill="#0d0e10"/>
+  <g transform="translate(12 5) scale(1.1)">
+    <path d="M50 38V14H14V50H38" fill="none" stroke="#f5f2ec" stroke-width="4"/>
+    <circle cx="50" cy="50" r="4.2" fill="#c9a45c"/>
+  </g>
+  <text x="88" y="39" fill="#f5f2ec" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="600" letter-spacing="-1.08">Blueprint</text>
+  <text x="90" y="60" fill="#a3a5ab" font-family="Consolas,monospace" font-size="9" font-weight="500" letter-spacing="10.5">STUDIO</text>
+</svg>

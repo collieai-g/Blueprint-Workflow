@@ -1,6 +1,6 @@
 # Service direction
 
-[繁體中文](service.zh-Hant.md) · [English](service.en.md) · [Product overview](../README.en.md)
+[繁體中文](service.zh-Hant.md) · [English](service.en.md) · [Product overview](../README.en.md) · [Official website ↗](https://blueprint-agent-studio.onrender.com/)
 
 ## Build a method that remains useful
 
@@ -28,4 +28,4 @@ This public repository is dedicated to product information and usage guidance. A
 
 ---
 
-Blueprint Workflow · 藍圖工作流, developed by Blueprint Studio · 藍圖工作室.
+Blueprint Workflow · 藍圖工作流, developed by [Blueprint Studio · 藍圖工作室](https://blueprint-agent-studio.onrender.com/).

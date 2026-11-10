@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <a href="https://blueprint-agent-studio.onrender.com/"><img src="assets/blueprint-studio.svg" alt="Blueprint Studio official website" width="196"></a>
+</p>
+
+<p align="center">
   <img src="assets/hero.en.svg" alt="Blueprint Workflow — Turn real work into reusable methods." width="100%">
 </p>
 
@@ -12,16 +16,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PRODUCT-0.3.0-65dfc5?style=flat-square&amp;labelColor=102b3d" alt="Product version 0.3.0">
-  <img src="https://img.shields.io/badge/RECORDS-LOCAL-9bbacf?style=flat-square&amp;labelColor=102b3d" alt="Task records stored locally">
-  <img src="https://img.shields.io/badge/SERVICE-IN_PLANNING-d8b97a?style=flat-square&amp;labelColor=102b3d" alt="Monthly service in planning">
+  <img src="https://img.shields.io/badge/PRODUCT-0.3.0-c9a45c?style=flat-square&amp;labelColor=0d0e10" alt="Product version 0.3.0">
+  <img src="https://img.shields.io/badge/RECORDS-LOCAL-a3a5ab?style=flat-square&amp;labelColor=0d0e10" alt="Task records stored locally">
+  <img src="https://img.shields.io/badge/SERVICE-IN_PLANNING-e3d8be?style=flat-square&amp;labelColor=0d0e10" alt="Monthly service in planning">
 </p>
 
 <p align="center">
   <a href="#product-value">Product value</a> ·
   <a href="docs/installation.en.md">Installation</a> ·
   <a href="docs/validation.en.md">Validation</a> ·
-  <a href="docs/service.en.md">Service plans</a>
+  <a href="docs/service.en.md">Service plans</a> ·
+  <a href="https://blueprint-agent-studio.onrender.com/">Official website ↗</a>
 </p>
 
 ---
@@ -103,6 +108,6 @@ Real background-model analysis, read-only research, new-input execution through 
 
 <p align="center">
   <strong>Blueprint Workflow · 藍圖工作流</strong><br>
-  Developed by Blueprint Studio · 藍圖工作室<br>
+  Developed by <a href="https://blueprint-agent-studio.onrender.com/">Blueprint Studio · 藍圖工作室</a><br>
   <a href="README.md">繁體中文</a> · <a href="docs/installation.en.md">Installation</a> · <a href="docs/service.en.md">Service information</a>
 </p>

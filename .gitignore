@@ -1,0 +1,11 @@
+# Public product materials only. Application code and packages remain separate.
+*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/README.en.md
+!/docs/
+!/docs/*.md
+!/assets/
+!/assets/*.svg
+!/assets/*.png

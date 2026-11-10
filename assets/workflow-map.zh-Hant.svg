@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="206" viewBox="0 0 1280 206" role="img" aria-labelledby="title desc">
+  <title id="title">由實際工作到可重用工作流</title>
+  <desc id="desc">四個相連階段：記錄真實工作、理解方法與限制、同步製作工作流，以及核對後再次使用。</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b2235"/><stop offset="1" stop-color="#0d2a3c"/></linearGradient></defs>
+  <rect width="1280" height="206" rx="14" fill="url(#bg)"/>
+  <rect x=".5" y=".5" width="1279" height="205" rx="13.5" fill="none" stroke="#527d92" stroke-opacity=".35"/>
+  <path d="M70 59h1124" fill="none" stroke="#61bfb9" stroke-opacity=".26"/>
+  <g fill="#102d40" stroke="#81d8cd" stroke-width="1.5"><circle cx="70" cy="59" r="17"/><circle cx="377" cy="59" r="17"/><circle cx="684" cy="59" r="17"/><circle cx="991" cy="59" r="17"/></g>
+  <g fill="#a8e8dc" font-family="Arial,Helvetica,sans-serif" font-size="11" text-anchor="middle"><text x="70" y="63">01</text><text x="377" y="63">02</text><text x="684" y="63">03</text><text x="991" y="63">04</text></g>
+  <g font-family="Microsoft JhengHei,PingFang TC,Noto Sans CJK TC,sans-serif">
+    <g fill="#e5f1f5" font-size="20" font-weight="600"><text x="53" y="111">記錄真實工作</text><text x="360" y="111">理解方法與限制</text><text x="667" y="111">同步製作工作流</text><text x="974" y="111">核對後再次使用</text></g>
+    <g fill="#96b7c6" font-size="15"><text x="53" y="146">保存指示、操作與結果</text><text x="360" y="146">保留目標、決定與修正</text><text x="667" y="146">逐步建立可重用的方法</text><text x="974" y="146">帶入新資料，驗證本次成果</text></g>
+  </g>
+  <g stroke="#bd9f6b" stroke-opacity=".6"><path d="M310 102v48M617 102v48M924 102v48"/></g>
+</svg>

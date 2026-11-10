@@ -100,7 +100,7 @@ class V030ServiceIntegrationTests(unittest.TestCase):
         self.assertEqual(status["pending_event_count"], 0)
         self.assertIsNotNone(status["last_analysis_success_at"])
         self.assertEqual(status["analysis_lag_seconds"], 0)
-        self.assertEqual(Path(status["workspace"]), Path(self.temporary.name) / "tasks" / self.sid)
+        self.assertEqual(Path(status["workspace"]), Path(self.temporary.name).resolve() / "tasks" / self.sid)
         compact = self.service.session_status(self.sid)
         self.assertNotIn("draft", compact)
         self.assertEqual(compact["draft_step_count"], 1)

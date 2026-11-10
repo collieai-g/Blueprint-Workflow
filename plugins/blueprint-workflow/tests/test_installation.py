@@ -21,7 +21,9 @@ def provider_info(host, provider, model):
 class InstallationTests(unittest.TestCase):
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix="blueprint-install-")
-        self.root = Path(self.temporary.name)
+        # Windows runners may expose TEMP through an 8.3 alias. Match the
+        # installer's canonical path spelling while retaining exact identities.
+        self.root = Path(self.temporary.name).resolve()
         self.data = self.root / "private"
         self.home = self.root / "fake-home"
         self.home.mkdir()
